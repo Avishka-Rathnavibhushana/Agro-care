@@ -18,7 +18,7 @@ class _FeaturesPageState extends State<FeaturesPage> {
     return Expanded(
       child: Center(
         child: Stack(
-          alignment: Alignment.center,
+          alignment: Alignment.topCenter,
           children: [
             Row(
               children: [

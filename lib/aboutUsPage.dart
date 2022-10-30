@@ -16,7 +16,7 @@ class _AboutUSPageState extends State<AboutUSPage> {
     return Expanded(
       child: Center(
         child: Stack(
-          alignment: Alignment.center,
+          alignment: Alignment.topCenter,
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(

@@ -16,7 +16,7 @@ class _HoemPageState extends State<HoemPage> {
     return Expanded(
       child: Center(
         child: Stack(
-          alignment: Alignment.center,
+          alignment: Alignment.topCenter,
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(

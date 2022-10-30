@@ -28,27 +28,23 @@ class FeatureBox extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 15),
+            child: SimpleButton(
+              text: "LOGIN",
+              ontap: ontap,
+            ),
+          ),
           Expanded(
             child: Stack(
-              alignment: Alignment.bottomCenter,
+              fit: StackFit.expand,
               children: [
-                Expanded(
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(
-                      50,
-                    ),
-                    child: Image.asset(
-                      image,
-                      fit: BoxFit.fitHeight,
-                      width: MediaQuery.of(context).size.width,
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 15),
-                  child: SimpleButton(
-                    text: "LOGIN",
-                    ontap: ontap,
+                ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(50)),
+                  child: Image.asset(
+                    image,
+                    fit: BoxFit.fitHeight,
+                    width: MediaQuery.of(context).size.width,
                   ),
                 ),
               ],
